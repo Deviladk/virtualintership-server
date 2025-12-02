@@ -23,7 +23,7 @@ app.use(cors({
 }));
 
 // Routes
-app.use('/api/auth', require('./routes/auth'));
+app.use('/auth', require('./routes/auth'));
 app.use('/api/courses', require('./routes/courses'));
 app.use('/api/internships', require('./routes/internships'));
 app.use('/api/enrollments', require('./routes/enrollments'));
