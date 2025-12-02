@@ -24,13 +24,13 @@ app.use(cors({
 
 // Routes
 app.use('/auth', require('./routes/auth'));
-app.use('/api/courses', require('./routes/courses'));
-app.use('/api/internships', require('./routes/internships'));
-app.use('/api/enrollments', require('./routes/enrollments'));
-app.use('/api/payments', require('./routes/payments'));
+app.use('/courses', require('./routes/courses'));
+app.use('/internships', require('./routes/internships'));
+app.use('/enrollments', require('./routes/enrollments'));
+app.use('/payments', require('./routes/payments'));
 
 // Health check route
-app.get('/api/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.status(200).json({
     success: true,
     message: 'Server is running',
